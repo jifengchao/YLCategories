@@ -1,0 +1,29 @@
+# YLCategories
+
+[![CI Status](https://img.shields.io/travis/jifengchao/YLCategories.svg?style=flat)](https://travis-ci.org/jifengchao/YLCategories)
+[![Version](https://img.shields.io/cocoapods/v/YLCategories.svg?style=flat)](https://cocoapods.org/pods/YLCategories)
+[![License](https://img.shields.io/cocoapods/l/YLCategories.svg?style=flat)](https://cocoapods.org/pods/YLCategories)
+[![Platform](https://img.shields.io/cocoapods/p/YLCategories.svg?style=flat)](https://cocoapods.org/pods/YLCategories)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+YLCategories is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'YLCategories'
+```
+
+## Author
+
+jifengchao, daichao@xiaoma.cn
+
+## License
+
+YLCategories is available under the MIT license. See the LICENSE file for more info.
