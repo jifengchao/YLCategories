@@ -1,0 +1,16 @@
+PODS:
+  - YLCategories (0.1.0)
+
+DEPENDENCIES:
+  - YLCategories (from `../`)
+
+EXTERNAL SOURCES:
+  YLCategories:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YLCategories: 3e96b1a855ae42b75b2240ac7ece85d11d88b09f
+
+PODFILE CHECKSUM: f9f982c994c0424e084b5d0035bcbb99fce3fb64
+
+COCOAPODS: 1.10.1

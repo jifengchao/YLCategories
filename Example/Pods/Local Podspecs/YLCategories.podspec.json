@@ -1,0 +1,22 @@
+{
+  "name": "YLCategories",
+  "version": "0.1.0",
+  "summary": "A short description of YLCategories.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jifengchao/YLCategories",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jifengchao": "965524749@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jifengchao/YLCategories.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "YLCategories/Classes/**/*"
+}
