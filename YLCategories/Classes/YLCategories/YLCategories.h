@@ -51,5 +51,6 @@
 #import "NSString+YLJsonString.h"
 #import "NSString+YLRegex.h"
 #import "NSString+YLTextSize.h"
+#import "NSURL+YLParams.h"
 
 #endif /* YLCategories_h */

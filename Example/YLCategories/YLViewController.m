@@ -8,6 +8,8 @@
 
 #import "YLViewController.h"
 
+#import <NSURL+YLParams.h>
+
 @interface YLViewController ()
 
 @end
@@ -18,6 +20,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self test];
+}
+
+- (void)test {
+    [self printURLWith:@"http://www.baidu.com?name=dai&"];
+    [self printURLWith:@"http://www.baidu.com?name=dai"];
+    [self printURLWith:@"http://wwww.baidu.com?name=dai"];
+    [self printURLWith:@"http://wwww.baidu.com?name=dai&weight=178"];
+    
+    [self printURLWith:@"xiaoma://wwww.baidu.com?name=dai"];
+    
+}
+
+- (void)printURLWith:(NSString *)string {
+    NSLog(@"----------------------------");
+    
+    NSURL *url = [NSURL URLWithString:string];
+    
+    NSLog(@"params = %@", [url yl_getParams]);
+    NSLog(@"path = %@", [url yl_getPath]);
+    NSLog(@"name = %@", [url yl_valueForParameter:@"name"]);
+    NSLog(@"weight = %@", [url yl_valueForParameter:@"weight"]);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

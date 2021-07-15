@@ -27,6 +27,7 @@
 #import "NSString+YLJsonString.h"
 #import "NSString+YLRegex.h"
 #import "NSString+YLTextSize.h"
+#import "NSURL+YLParams.h"
 #import "YLFoundation.h"
 #import "UIApplication+YLCall.h"
 #import "UIButton+YLAlignment.h"

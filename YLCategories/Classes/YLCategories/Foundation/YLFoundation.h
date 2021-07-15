@@ -23,5 +23,6 @@
 #import "NSString+YLJsonString.h"
 #import "NSString+YLRegex.h"
 #import "NSString+YLTextSize.h"
+#import "NSURL+YLParams.h"
 
 #endif /* YLFoundation_h */
