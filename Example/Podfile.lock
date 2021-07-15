@@ -1,5 +1,5 @@
 PODS:
-  - YLCategories (0.1.0)
+  - YLCategories (0.1.1)
 
 DEPENDENCIES:
   - YLCategories (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YLCategories: c128730b26b42fdc5bb1ba0178ed0c1eec0dd6fe
+  YLCategories: 4e22659e936437e2f33e55d3643b1d1ed7d78cf9
 
 PODFILE CHECKSUM: f9f982c994c0424e084b5d0035bcbb99fce3fb64
 

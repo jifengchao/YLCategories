@@ -10,6 +10,8 @@
 
 #import <NSURL+YLParams.h>
 
+#import <UIButton+YLMake.h>
+
 @interface YLViewController ()
 
 @end
@@ -21,7 +23,16 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [self test];
+    [self test1];
+}
+
+- (void)test1 {
+    UIButton *btn = [UIButton yl_buttonWithBlock:^{
+        NSLog(@"点击了");
+    }];
+    btn.frame = CGRectMake(10, 100, 100, 100);
+    [self.view addSubview:btn];
+    btn.backgroundColor = UIColor.redColor;
 }
 
 - (void)test {

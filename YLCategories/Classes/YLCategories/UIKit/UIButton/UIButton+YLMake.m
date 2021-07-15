@@ -13,8 +13,7 @@
 
 + (UIButton *)yl_buttonWithNormalTitle:(NSString *)normalTitle
                       normalTitleColor:(UIColor *)normalTitleColor
-                                  font:(UIFont *)font
-{
+                                  font:(UIFont *)font {
     return [self __buttonWithNormalTitle:normalTitle
                             selecedTitle:nil
                         normalTitleColor:normalTitleColor
