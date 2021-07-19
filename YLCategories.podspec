@@ -73,8 +73,8 @@ TODO: Add long description of the pod here.
       uikit.subspec 'UIImageView' do |imageview|
           imageview.source_files = 'YLCategories/UIKit/UIImageView/*.{h,m}'
       end
-      uikit.subspec 'UILable' do |lable|
-          lable.source_files = 'YLCategories/UIKit/UILable/*.{h,m}'
+      uikit.subspec 'UILabel' do |label|
+          label.source_files = 'YLCategories/UIKit/UILabel/*.{h,m}'
       end
       uikit.subspec 'UINavigationBar' do |navigationbar|
           navigationbar.source_files = 'YLCategories/UIKit/UINavigationBar/*.{h,m}'
@@ -99,7 +99,6 @@ TODO: Add long description of the pod here.
 
   #CoreLocation
   s.subspec 'CoreLocation' do |corelocation|
-#      corelocation.source_files = 'YLCategories/CoreLocation/**/*.{h,m}'
       corelocation.public_header_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
       corelocation.source_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
       corelocation.frameworks = 'CoreLocation'
