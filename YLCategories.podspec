@@ -8,35 +8,107 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YLCategories'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of YLCategories.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/jifengchao/YLCategories'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jifengchao' => '965524749@qq.com' }
   s.source           = { :git => 'https://github.com/jifengchao/YLCategories.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'YLCategories/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'YLCategories' => ['YLCategories/Assets/*.png']
-  # }
+  s.public_header_files = 'YLCategories/YLCategories.h'
+  s.source_files = 'YLCategories/YLCategories.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  #Foundation
+  s.subspec 'Foundation' do |foundation|
+      foundation.public_header_files = 'YLCategories/Foundation/YLFoundation.h'
+      foundation.source_files = 'YLCategories/Foundation/YLFoundation.h'
+      foundation.frameworks = 'Foundation'
+
+      #三级
+      foundation.subspec 'NSArray' do |array|
+          array.source_files = 'YLCategories/Foundation/NSArray/*.{h,m}'
+      end
+      foundation.subspec 'NSDictionary' do |dictinoary|
+          dictinoary.source_files = 'YLCategories/Foundation/NSDictionary/*.{h,m}'
+      end
+      foundation.subspec 'NSFileManager' do |filemanager|
+          filemanager.source_files = 'YLCategories/Foundation/NSFileManager/*.{h,m}'
+      end
+      foundation.subspec 'NSObject' do |object|
+          object.source_files = 'YLCategories/Foundation/NSObject/*.{h,m}'
+      end
+      foundation.subspec 'NSString' do |string|
+          string.source_files = 'YLCategories/Foundation/NSString/*.{h,m}'
+      end
+      foundation.subspec 'NSURL' do |url|
+          url.source_files = 'YLCategories/Foundation/NSURL/*.{h,m}'
+      end
+  end
+
+
+  #UIKit
+  s.subspec 'UIKit' do |uikit|
+      uikit.public_header_files = 'YLCategories/UIKit/YLUIKit.h'
+      uikit.source_files = 'YLCategories/UIKit/YLUIKit.h'
+      uikit.frameworks = 'UIKit'
+
+      #三级
+      uikit.subspec 'UIApplication' do |application|
+          application.source_files = 'YLCategories/UIKit/UIApplication/*.{h,m}'
+      end
+      uikit.subspec 'UIButton' do |button|
+          button.source_files = 'YLCategories/UIKit/UIButton/*.{h,m}'
+      end
+      uikit.subspec 'UIImage' do |image|
+          image.source_files = 'YLCategories/UIKit/UIImage/*.{h,m}'
+      end
+      uikit.subspec 'UIImageView' do |imageview|
+          imageview.source_files = 'YLCategories/UIKit/UIImageView/*.{h,m}'
+      end
+      uikit.subspec 'UILable' do |lable|
+          lable.source_files = 'YLCategories/UIKit/UILable/*.{h,m}'
+      end
+      uikit.subspec 'UINavigationBar' do |navigationbar|
+          navigationbar.source_files = 'YLCategories/UIKit/UINavigationBar/*.{h,m}'
+      end
+      uikit.subspec 'UIPasteboard' do |pasteboard|
+          pasteboard.source_files = 'YLCategories/UIKit/UIPasteboard/*.{h,m}'
+      end
+      uikit.subspec 'UITextField' do |textfield|
+          textfield.source_files = 'YLCategories/UIKit/UITextField/*.{h,m}'
+      end
+      uikit.subspec 'UITextView' do |textview|
+          textview.source_files = 'YLCategories/UIKit/UITextView/*.{h,m}'
+      end
+      uikit.subspec 'UIView' do |view|
+          view.source_files = 'YLCategories/UIKit/UIView/*.{h,m}'
+      end
+      uikit.subspec 'UIViewController' do |viewcontroller|
+          viewcontroller.source_files = 'YLCategories/UIKit/UIViewController/*.{h,m}'
+      end
+  end
+
+
+  #CoreLocation
+  s.subspec 'CoreLocation' do |corelocation|
+#      corelocation.source_files = 'YLCategories/CoreLocation/**/*.{h,m}'
+      corelocation.public_header_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
+      corelocation.source_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
+      corelocation.frameworks = 'CoreLocation'
+
+      #三级
+      corelocation.subspec 'CLLocation' do |location|
+          location.source_files = 'YLCategories/CoreLocation/CLLocation/*.{h,m}'
+      end
+  end
+
+
 end
