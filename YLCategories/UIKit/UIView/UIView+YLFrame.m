@@ -9,104 +9,104 @@
 
 @implementation UIView (YLFrame)
 
-- (void)setHyl_x:(CGFloat)hyl_x {
+- (void)setYl_x:(CGFloat)yl_x {
     CGRect frame = self.frame;
-    frame.origin.x = hyl_x;
+    frame.origin.x = yl_x;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_x {
+- (CGFloat)yl_x {
     return self.frame.origin.x;
 }
 
-- (void)setHyl_y:(CGFloat)hyl_y {
+- (void)setYl_y:(CGFloat)yl_y {
     CGRect frame = self.frame;
-    frame.origin.y = hyl_y;
+    frame.origin.y = yl_y;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_y {
+- (CGFloat)yl_y {
     return self.frame.origin.y;
 }
 
-- (void)setHyl_w:(CGFloat)hyl_w {
+- (void)setYl_w:(CGFloat)yl_w {
     CGRect frame = self.frame;
-    frame.size.width = hyl_w;
+    frame.size.width = yl_w;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_w {
+- (CGFloat)yl_w {
     return self.frame.size.width;
 }
 
-- (void)setHyl_h:(CGFloat)hyl_h {
+- (void)setYl_h:(CGFloat)yl_h {
     CGRect frame = self.frame;
-    frame.size.height = hyl_h;
+    frame.size.height = yl_h;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_h {
+- (CGFloat)yl_h {
     return self.frame.size.height;
 }
 
-- (CGFloat)hyl_centerX {
+- (CGFloat)yl_centerX {
     return self.center.x;
 }
 
-- (void)setHyl_centerX:(CGFloat)hyl_centerX {
+- (void)setYl_centerX:(CGFloat)yl_centerX {
     CGPoint center = self.center;
-    center.x = hyl_centerX;
+    center.x = yl_centerX;
     self.center = center;
 }
 
-- (CGFloat)hyl_centerY {
+- (CGFloat)yl_centerY {
     return self.center.y;
 }
 
-- (void)setHyl_centerY:(CGFloat)hyl_centerY {
+- (void)setYl_centerY:(CGFloat)yl_centerY {
     CGPoint center = self.center;
-    center.y = hyl_centerY;
+    center.y = yl_centerY;
     self.center = center;
 }
 
-- (void)setHyl_size:(CGSize)hyl_size {
+- (void)setYl_size:(CGSize)yl_size {
     CGRect frame = self.frame;
-    frame.size = hyl_size;
+    frame.size = yl_size;
     self.frame = frame;
 }
 
-- (CGSize)hyl_size {
+- (CGSize)yl_size {
     return self.frame.size;
 }
 
-- (void)setHyl_origin:(CGPoint)hyl_origin {
+- (void)setYl_origin:(CGPoint)yl_origin {
     CGRect frame = self.frame;
-    frame.origin = hyl_origin;
+    frame.origin = yl_origin;
     self.frame = frame;
 }
 
-- (CGPoint)hyl_origin {
+- (CGPoint)yl_origin {
     return self.frame.origin;
 }
 
-- (void)setHyl_right:(CGFloat)hyl_right {
+- (void)setYl_right:(CGFloat)yl_right {
     CGRect frame = self.frame;
-    frame.origin.x = hyl_right - frame.size.width;
+    frame.origin.x = yl_right - frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_right {
+- (CGFloat)yl_right {
     CGRect frame = self.frame;
     return (frame.origin.x + frame.size.width);
 }
 
-- (void)setHyl_bottom:(CGFloat)hyl_bottom {
+- (void)setYl_bottom:(CGFloat)yl_bottom {
     CGRect frame = self.frame;
-    frame.origin.y = hyl_bottom - frame.size.height;
+    frame.origin.y = yl_bottom - frame.size.height;
     self.frame = frame;
 }
 
-- (CGFloat)hyl_bottom {
+- (CGFloat)yl_bottom {
     CGRect frame = self.frame;
     return (frame.origin.y + frame.size.height);
 }

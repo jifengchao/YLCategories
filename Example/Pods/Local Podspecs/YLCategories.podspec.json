@@ -1,6 +1,6 @@
 {
   "name": "YLCategories",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "summary": "A short description of YLCategories.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/jifengchao/YLCategories",
@@ -13,10 +13,109 @@
   },
   "source": {
     "git": "https://github.com/jifengchao/YLCategories.git",
-    "tag": "0.1.1"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "YLCategories/Classes/**/*"
+  "public_header_files": "YLCategories/YLCategories.h",
+  "source_files": "YLCategories/YLCategories.h",
+  "subspecs": [
+    {
+      "name": "Foundation",
+      "public_header_files": "YLCategories/Foundation/YLFoundation.h",
+      "source_files": "YLCategories/Foundation/YLFoundation.h",
+      "frameworks": "Foundation",
+      "subspecs": [
+        {
+          "name": "NSArray",
+          "source_files": "YLCategories/Foundation/NSArray/*.{h,m}"
+        },
+        {
+          "name": "NSDictionary",
+          "source_files": "YLCategories/Foundation/NSDictionary/*.{h,m}"
+        },
+        {
+          "name": "NSFileManager",
+          "source_files": "YLCategories/Foundation/NSFileManager/*.{h,m}"
+        },
+        {
+          "name": "NSObject",
+          "source_files": "YLCategories/Foundation/NSObject/*.{h,m}"
+        },
+        {
+          "name": "NSString",
+          "source_files": "YLCategories/Foundation/NSString/*.{h,m}"
+        },
+        {
+          "name": "NSURL",
+          "source_files": "YLCategories/Foundation/NSURL/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "UIKit",
+      "public_header_files": "YLCategories/UIKit/YLUIKit.h",
+      "source_files": "YLCategories/UIKit/YLUIKit.h",
+      "frameworks": "UIKit",
+      "subspecs": [
+        {
+          "name": "UIApplication",
+          "source_files": "YLCategories/UIKit/UIApplication/*.{h,m}"
+        },
+        {
+          "name": "UIButton",
+          "source_files": "YLCategories/UIKit/UIButton/*.{h,m}"
+        },
+        {
+          "name": "UIImage",
+          "source_files": "YLCategories/UIKit/UIImage/*.{h,m}"
+        },
+        {
+          "name": "UIImageView",
+          "source_files": "YLCategories/UIKit/UIImageView/*.{h,m}"
+        },
+        {
+          "name": "UILabel",
+          "source_files": "YLCategories/UIKit/UILabel/*.{h,m}"
+        },
+        {
+          "name": "UINavigationBar",
+          "source_files": "YLCategories/UIKit/UINavigationBar/*.{h,m}"
+        },
+        {
+          "name": "UIPasteboard",
+          "source_files": "YLCategories/UIKit/UIPasteboard/*.{h,m}"
+        },
+        {
+          "name": "UITextField",
+          "source_files": "YLCategories/UIKit/UITextField/*.{h,m}"
+        },
+        {
+          "name": "UITextView",
+          "source_files": "YLCategories/UIKit/UITextView/*.{h,m}"
+        },
+        {
+          "name": "UIView",
+          "source_files": "YLCategories/UIKit/UIView/*.{h,m}"
+        },
+        {
+          "name": "UIViewController",
+          "source_files": "YLCategories/UIKit/UIViewController/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "CoreLocation",
+      "public_header_files": "YLCategories/CoreLocation/YLCoreLocation.h",
+      "source_files": "YLCategories/CoreLocation/YLCoreLocation.h",
+      "frameworks": "CoreLocation",
+      "subspecs": [
+        {
+          "name": "CLLocation",
+          "source_files": "YLCategories/CoreLocation/CLLocation/*.{h,m}"
+        }
+      ]
+    }
+  ]
 }

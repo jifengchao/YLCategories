@@ -10,10 +10,12 @@
 #endif
 #endif
 
+#import "YLCategories.h"
+#import "YLCoreLocation.h"
 #import "CLLocation+YLConvert.h"
+#import "YLFoundation.h"
 #import "NSArray+YLExtension.h"
 #import "NSArray+YLSafe.h"
-#import "NSAttributedString+YLHighlight.h"
 #import "NSDictionary+YLExtension.h"
 #import "NSDictionary+YLSafe.h"
 #import "NSFileManager+YLFile.h"
@@ -28,7 +30,7 @@
 #import "NSString+YLRegex.h"
 #import "NSString+YLTextSize.h"
 #import "NSURL+YLParams.h"
-#import "YLFoundation.h"
+#import "YLUIKit.h"
 #import "UIApplication+YLCall.h"
 #import "UIButton+YLAlignment.h"
 #import "UIButton+YLBlock.h"
@@ -44,7 +46,6 @@
 #import "UILabel+YLMake.h"
 #import "UINavigationBar+YLHairline.h"
 #import "UIPasteboard+YLExtension.h"
-#import "UISearchBar+YLAppearance.h"
 #import "UITextField+YLDelegate.h"
 #import "UITextField+YLLimitLength.h"
 #import "UITextField+YLMake.h"
@@ -58,8 +59,6 @@
 #import "UIView+YLVisualEffect.h"
 #import "UIViewController+YLAlert.h"
 #import "UIViewController+YLExtension.h"
-#import "YLUIKit.h"
-#import "YLCategories.h"
 
 FOUNDATION_EXPORT double YLCategoriesVersionNumber;
 FOUNDATION_EXPORT const unsigned char YLCategoriesVersionString[];

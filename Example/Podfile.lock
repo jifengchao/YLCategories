@@ -1,5 +1,47 @@
 PODS:
-  - YLCategories (0.1.1)
+  - YLCategories (0.1.4):
+    - YLCategories/CoreLocation (= 0.1.4)
+    - YLCategories/Foundation (= 0.1.4)
+    - YLCategories/UIKit (= 0.1.4)
+  - YLCategories/CoreLocation (0.1.4):
+    - YLCategories/CoreLocation/CLLocation (= 0.1.4)
+  - YLCategories/CoreLocation/CLLocation (0.1.4)
+  - YLCategories/Foundation (0.1.4):
+    - YLCategories/Foundation/NSArray (= 0.1.4)
+    - YLCategories/Foundation/NSDictionary (= 0.1.4)
+    - YLCategories/Foundation/NSFileManager (= 0.1.4)
+    - YLCategories/Foundation/NSObject (= 0.1.4)
+    - YLCategories/Foundation/NSString (= 0.1.4)
+    - YLCategories/Foundation/NSURL (= 0.1.4)
+  - YLCategories/Foundation/NSArray (0.1.4)
+  - YLCategories/Foundation/NSDictionary (0.1.4)
+  - YLCategories/Foundation/NSFileManager (0.1.4)
+  - YLCategories/Foundation/NSObject (0.1.4)
+  - YLCategories/Foundation/NSString (0.1.4)
+  - YLCategories/Foundation/NSURL (0.1.4)
+  - YLCategories/UIKit (0.1.4):
+    - YLCategories/UIKit/UIApplication (= 0.1.4)
+    - YLCategories/UIKit/UIButton (= 0.1.4)
+    - YLCategories/UIKit/UIImage (= 0.1.4)
+    - YLCategories/UIKit/UIImageView (= 0.1.4)
+    - YLCategories/UIKit/UILabel (= 0.1.4)
+    - YLCategories/UIKit/UINavigationBar (= 0.1.4)
+    - YLCategories/UIKit/UIPasteboard (= 0.1.4)
+    - YLCategories/UIKit/UITextField (= 0.1.4)
+    - YLCategories/UIKit/UITextView (= 0.1.4)
+    - YLCategories/UIKit/UIView (= 0.1.4)
+    - YLCategories/UIKit/UIViewController (= 0.1.4)
+  - YLCategories/UIKit/UIApplication (0.1.4)
+  - YLCategories/UIKit/UIButton (0.1.4)
+  - YLCategories/UIKit/UIImage (0.1.4)
+  - YLCategories/UIKit/UIImageView (0.1.4)
+  - YLCategories/UIKit/UILabel (0.1.4)
+  - YLCategories/UIKit/UINavigationBar (0.1.4)
+  - YLCategories/UIKit/UIPasteboard (0.1.4)
+  - YLCategories/UIKit/UITextField (0.1.4)
+  - YLCategories/UIKit/UITextView (0.1.4)
+  - YLCategories/UIKit/UIView (0.1.4)
+  - YLCategories/UIKit/UIViewController (0.1.4)
 
 DEPENDENCIES:
   - YLCategories (from `../`)
@@ -9,7 +51,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YLCategories: 4e22659e936437e2f33e55d3643b1d1ed7d78cf9
+  YLCategories: a3635a7c32a87f13d50757941464fd49083939e1
 
 PODFILE CHECKSUM: f9f982c994c0424e084b5d0035bcbb99fce3fb64
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YLCategories'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of YLCategories.'
 
   s.description      = <<-DESC
@@ -93,6 +93,18 @@ TODO: Add long description of the pod here.
       end
       uikit.subspec 'UIViewController' do |viewcontroller|
           viewcontroller.source_files = 'YLCategories/UIKit/UIViewController/*.{h,m}'
+      end
+  end
+
+
+  #CoreLocation
+  s.subspec 'CoreLocation' do |corelocation|
+      corelocation.public_header_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
+      corelocation.source_files = 'YLCategories/CoreLocation/YLCoreLocation.h'
+      corelocation.frameworks = 'CoreLocation'
+
+      corelocation.subspec 'CLLocation' do |location|
+          location.source_files = 'YLCategories/CoreLocation/CLLocation/*.{h,m}'
       end
   end
 

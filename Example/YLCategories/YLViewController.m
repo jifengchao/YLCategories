@@ -9,8 +9,8 @@
 #import "YLViewController.h"
 
 #import <NSURL+YLParams.h>
-
 #import <UIButton+YLMake.h>
+#import <UIView+YLFrame.h>
 
 @interface YLViewController ()
 
@@ -24,6 +24,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self test1];
+    
+    NSLog(@"%lf", self.view.yl_h);
 }
 
 - (void)test1 {

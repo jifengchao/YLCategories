@@ -64,7 +64,7 @@
 
 + (UIButton *)yl_buttonWithNormalBackgroundImage:(UIImage *)normalBackgroundImage
                           selecedBackgroundImage:(UIImage *)selecedBackgroundImage {
-    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    UIButton *button = [self __custom_button];
     [button setBackgroundImage:normalBackgroundImage forState:(UIControlStateNormal)];
     [button setBackgroundImage:selecedBackgroundImage forState:(UIControlStateSelected)];
     return button;
@@ -93,6 +93,11 @@
 
 #pragma mark private methods
 
++ (UIButton *)__custom_button {
+    /** 可单独抽取此分类，使用自定义Button替代*/
+    return [UIButton buttonWithType:(UIButtonTypeCustom)];
+}
+
 + (UIButton *)__buttonWithNormalTitle:(NSString *)normalTitle
                          selecedTitle:(NSString *)selecedTitle
                      normalTitleColor:(UIColor *)normalTitleColor
@@ -100,7 +105,7 @@
                                  font:(UIFont *)font
                           normalImage:(UIImage *)normalImage
                          selecedImage:(UIImage *)selecedImage {
-    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    UIButton *button = [self __custom_button];
     
     [button setTitle:normalTitle forState:(UIControlStateNormal)];
     [button setTitle:selecedTitle forState:UIControlStateSelected];

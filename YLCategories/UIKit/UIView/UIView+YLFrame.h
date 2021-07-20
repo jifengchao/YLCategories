@@ -9,16 +9,16 @@
 
 @interface UIView (YLFrame)
 
-@property (assign, nonatomic) CGFloat hyl_x;
-@property (assign, nonatomic) CGFloat hyl_y;
-@property (assign, nonatomic) CGFloat hyl_w;
-@property (assign, nonatomic) CGFloat hyl_h;
-@property (assign, nonatomic) CGFloat hyl_centerX;
-@property (assign, nonatomic) CGFloat hyl_centerY;
-@property (assign, nonatomic) CGSize  hyl_size;
-@property (assign, nonatomic) CGPoint hyl_origin;
-@property (assign, nonatomic) CGFloat hyl_right;
-@property (assign, nonatomic) CGFloat hyl_bottom;
+@property (assign, nonatomic) CGFloat yl_x;
+@property (assign, nonatomic) CGFloat yl_y;
+@property (assign, nonatomic) CGFloat yl_w;
+@property (assign, nonatomic) CGFloat yl_h;
+@property (assign, nonatomic) CGFloat yl_centerX;
+@property (assign, nonatomic) CGFloat yl_centerY;
+@property (assign, nonatomic) CGSize  yl_size;
+@property (assign, nonatomic) CGPoint yl_origin;
+@property (assign, nonatomic) CGFloat yl_right;
+@property (assign, nonatomic) CGFloat yl_bottom;
 
 @end
 
