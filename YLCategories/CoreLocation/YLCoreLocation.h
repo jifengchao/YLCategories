@@ -8,6 +8,10 @@
 #ifndef YLCoreLocation_h
 #define YLCoreLocation_h
 
-#import "CLLocation+YLConvert"
+#if __has_include(<CLLocation+YLConvert.h>)
+#import <CLLocation+YLConvert.h>
+#else
+#import "CLLocation+YLConvert.h"
+#endif
 
 #endif /* YLCoreLocation_h */
